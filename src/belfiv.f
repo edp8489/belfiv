@@ -291,7 +291,7 @@ C
       IF(NPLY.GT.1.) GO TO 620
       CNP=1.0
       GO TO 625
-  620 NCP=1.0-((C6*SIGMA/H)/(1.0+C7*VP**2))
+  620 CNP=1.0-((C6*SIGMA/H)/(1.0+C7*VP**2))
   625 BB=C1/(C2+VP**2)
       CC=C3*ABS(SIN(PI*VP))/(C4+VP**2)
       CST=BB+CC+C5
