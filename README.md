@@ -5,6 +5,22 @@ BELFIV program
 Transcribed from MSFC-DWG-20502540
 "Assessment of Flexible Lines for Flow Induced Vibration"
 
+# Usage
+- Launch DOSBox (standalone executable for Windows located in .\util\)
+
+- Mount belfiv main directory as C:
+> `mount C: Drive:\path\to\belfiv\folder`
+
+- Change to directory
+> `C:`
+
+- Set path to input and output files
+> `SET DFILE=C:\PATH\TO\INPUT.TXT`
+> `SET OFILE=C:\PATH\TO\OUTPUT.TXT`
+
+- Launch belfil and follow prompts
+> `build\belfiv.exe`
+
 # Installation
 
 ## DOS, Using IBM PROFORT compiler through DOSBox emulator
@@ -34,3 +50,4 @@ Transcribed from MSFC-DWG-20502540
 * in work *
 - From main belfiv directory
 > `gfortran -std=gnu -ffixed-form -ffixed-line-length-80  -Wextra -Wall -pedantic src/belfiv.f -o bin/belfiv.bin`
+
