@@ -1,0 +1,54 @@
+ GAS EXAMPLE 1.2                                                       
+
+                             BELLOWS PARAMETERS
+
+                   SIGMA(INSIDE CONVOLUTE WIDTH, IN)     0.400
+                   LAMBDA(INSIDE CONVOLUTE PITCH, IN)    0.726
+                   H(MEAN INSIDE CONVOLUTE HEIGHT, IN)   1.250
+                   T(CONVOLUTE THICKNESS PER PLY, IN)    0.037
+                   DI(INSIDE DIAMETER, IN)               8.000
+                   DU(OUTSIDE DIAMETER, IN)             10.574
+                   NC(NUMBER OF CONVOLUTES)              7.000
+                   NPLY(NUMBER OF PLYS)                  1.000
+                   E(YOUNGS MODULUS, LB/SQ.IN)      0.2850E+08
+                   KA(OVERALL SPRING RATE, LBF/IN)     980.612
+                   RHOM(MATERIAL DENSITY, LBF/CU.IN)     0.282
+
+                              FLUID PARAMETERS
+
+                   P(PRESSURE, PSIG)                    39.300
+                   TEMP(TEMPERATURE, DEG F)           -200.000
+                   RHOF(FLUID DENSITY, LBF/CU.IN)   0.3209E-03
+                   NFLUID(1=GAS, 2=LIQUID)                   1
+                   CE(ELBOW FACTOR, DIMENSIONLESS)       1.000
+
+
+                         THEORETICAL BELLOWS PERFORMANCE
+
+  LONG.    FLOW-IND. STRESS    MODE FREQUENCY      FLOW EXCITATION RANGE, FT/SEC
+ MODE NO.   WITH U.F., PSI           HZ             LOWER     CRITICAL    UPPER
+
+    1        0.52738E+03           122.691          13.632     20.449     40.897
+    2        0.10446E+04           243.368          27.041     40.561     81.123
+    3        0.14377E+04           360.526          40.058     60.088    120.175
+    4        0.16493E+04           472.710          52.523     78.785    157.570
+    5        0.16705E+04           578.533          64.281     96.422    192.844
+    6        0.15359E+04           676.693          75.188    112.782    225.564
+    7        0.13086E+04           765.989          85.110    127.665    255.330
+    8        0.16087E+04           845.336          93.926    140.889    281.779
+    9        0.18747E+04           913.776         101.531    152.296    304.592
+   10        0.20818E+04           970.493         107.833    161.749    323.498
+   11        0.16690E+05          1014.819         112.758    169.137    338.273
+   12        0.17352E+05          1046.246         116.250    174.374    348.749
+   13        0.17690E+05          1064.426         118.270    177.404    354.809
+
+
+ CONVOLUTE
+  BENDING
+   MODE      0.52836E+05          1535.182         170.576    255.864    511.727
+
+
+   FIRST RADIAL ACOUSTIC MODE FREQUENCY=  980.654 HZ
+
+   FIRST RADIAL ACOUSTIC MODE VELOCITY=  163.442 FT/SEC
+
