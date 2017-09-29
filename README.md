@@ -6,48 +6,9 @@ Transcribed from MSFC-DWG-20502540
 "Assessment of Flexible Lines for Flow Induced Vibration"
 
 # Usage
-- Launch DOSBox (standalone executable for Windows located in .\util\)
+Compiled for WinNT based systems using Open Watcom compiler
+Most recent binaries are in `BUILD\win\20170928\`
 
-- Mount belfiv main directory as C:
-> `mount C: Drive:\path\to\belfiv\folder`
-
-- Change to directory
-> `C:`
-
-- Set path to input and output files
-> `SET DFILE=C:\PATH\TO\INPUT.TXT`
-> `SET OFILE=C:\PATH\TO\OUTPUT.TXT`
-
-- Launch belfil and follow prompts
-> `build\belfiv.exe`
-
-# Installation
-
-## DOS, Using IBM PROFORT compiler through DOSBox emulator
-- Launch DOSBox
-- Mount belfiv main directory as C:
-> `mount C: Drive:\path\to\belfiv\folder`
-
-- Change to build directory
-> `C:`
-> `cd build`
-
-- (Optional) Make new folder for build
-> `mkdir 20170925`
-
-- Compile belfiv object
-> `..\..\util\profort\profort.exe ..\..\src\belfiv.f`
-
-- Link object file to .exe 
-> `..\..\util\profort\link.exe belfiv.obj`
-
-- Follow prompts inside linker [default option]
-> `Run File [BELFIV.EXE]: FILENAME.EXE`
-> `List File [NUL.MAP]: <hit enter>`
-> `Libraries [.LIB]: ..\..\util\profort\profort.lib`
-
-## Using gcc on modern systems
-* in work *
-- From main belfiv directory
-> `gfortran -std=gnu -ffixed-form -ffixed-line-length-80  -Wextra -Wall -pedantic src/belfiv.f -o bin/belfiv.bin`
-
+> `belfiv.exe` launches program and prompts user for input preference (keyboard or file)
+> `belfiv.exe F` launches program with instruction to read input from `DFILE` in same directory
+> `belfiv.exe K` launches program with instruction to promp user to define all inputs
